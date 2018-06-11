@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('classifier/',include('diwork.urls')),
     path('classifier/diwork_predict/', include('diwork_predict.urls')),
+    path('KG/',include('KG_search.urls')),
 ]

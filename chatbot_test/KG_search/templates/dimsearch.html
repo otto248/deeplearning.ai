@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <title>dimsearch</title>
+    <script src="{{url_for('static',
+               filename='js/jquery.min.js',_external=True)}}" ></script>
+	<script src="{{url_for('static',
+               filename='js/dimsearch.js',_external=True)}}" ></script>
+</head>
+<body>
+	<h1>模糊搜索</h1>
+	请输入搜索人员关键字:<input type="text" name="dimname"/><input type="button" value="预搜索" onclick="todimsearch()"/><br/>
+	模糊搜索结果：<select name="selectName"></select>&nbsp;&nbsp;<input type="checkbox" name="type" value="荣耀"/>荣耀&nbsp;&nbsp;&nbsp;&nbsp;
+				   <input type="checkbox" name="type" value="年龄"/>年龄
+				   <input type="button" value="搜索" onclick="search()"/><br/>
+				   <table>
+				   
+				   </table>
+</body>
+</html>
