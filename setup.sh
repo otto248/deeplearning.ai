@@ -5,7 +5,7 @@ set -e
 # TODO: Set to URL of git repo.
 PROJECT_GIT_URL='http://git.yonyou.com/cuiymf/chatbot_test.git'
 
-PROJECT_BASE_PATH='/usr/local/workspace'
+PROJECT_BASE_PATH='/home/workspace'
 
 
 # Install Python
@@ -28,5 +28,5 @@ mkvirtualenv chat_bot
 
 # Git clone the project and install dependencies
 sudo mkdir -p $PROJECT_BASE_PATH
-sudo git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH/chat_bot
-sudo pip install -r $PROJECT_BASE_PATH/chat_bot/chat_bot_test/requirements.txt
+git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH
+pip install -r $PROJECT_BASE_PATH/requirements.txt
