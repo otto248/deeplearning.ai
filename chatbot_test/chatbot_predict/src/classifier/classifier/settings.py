@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'diwork',
     'diwork_predict',
-    'KG_search'
+    'KG_contact',
 ]
 
 MIDDLEWARE = [
